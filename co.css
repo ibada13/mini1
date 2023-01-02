@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(34, 34, 34);
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 10px;
+    transition:0.65s ;
+}
+
+.hel{
+    width: 10fr;
+    grid-column: 3/9;
+    grid-row: 3/8;
+    background-color: #000;
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns:repeat(10,1fr) ;
+    gap: 10px;
+    border: double red 5px;
+    border-radius: 10px;
+}
+
+.in1,.in2,.in3{
+    text-align: center;
+    gap: 0.5fr;
+    grid-row:3/6;
+}
+.in1{
+     grid-column: 2/4;
+}
+.in2{
+    grid-column: 5/7;
+}
+.in3{
+    grid-column: 8/10;
+}
+h1{
+    
+    font-size: 2fr;
+    letter-spacing: 3px;
+    grid-column: 2/9;
+    color: WHITE;
+    grid-row: 1/2;
+
+}
+h1::first-letter{
+    color: rgb(255, 80, 80);
+}
+h5{
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    grid-row: 2/2;
+    grid-column: 2/11;
+}
+.bu1,.bu2{
+    grid-row: 7/9;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: red solid 2px;
+    border-radius: 7.5px;
+    font-weight: bolder;
+
+}
+.bu1:hover,.bu2:hover{
+    transform: scale(1.5);
+    transition: 0.65s;
+    color: black;
+    border: black solid 2px;
+    background-color: red;
+}
+.bu1{
+    grid-column: 3/5;
+}
+.bu2{
+    grid-column:  7/9;
+}
